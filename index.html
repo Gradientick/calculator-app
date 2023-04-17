@@ -25,24 +25,29 @@
       <div class="calculator-container">
         <div class="calculator">
           <div class="calculator-main">
-            <p id="screen" class="screen">0</p>
-            <button class="clear-btn" id="clear-btn">Clear</button>
-            <button class="onebtn">1</button>
-            <button class="twobtn">2</button>
-            <button class="threebtn">3</button>
-            <button class="fourbtn">4</button>
-            <button class="fivebtn">5</button>
-            <button class="sixbtn">6</button>
-            <button class="sevenbtn">7</button>
-            <button class="eightbtn">8</button>
-            <button class="ninebtn">9</button>
-            <button class="add-btn">+</button>
-            <button class="minus-btn">-</button>
-            <button class="multiply-btn">*</button>
-            <button class="divide">/</button>
-            <button class="zerobtn">0</button>
-            <button class="pointbtn">.</button>
-            <button class="equals-btn" id="equals-btn">=</button>
+            <!-- <p id="screen" class="screen" name="screen" data-screen>0</p> -->
+            <div class="screen">
+              <div class="previous-operand" data-previous-operand></div>
+              <div class="current-operand" data-current-operand></div>
+            </div>
+            <button class="clear-btn" data-all-clear>AC</button>
+            <button class="delete-btn" data-delete>DEL</button>
+            <button class="onebtn" data-number>1</button>
+            <button class="twobtn" data-number>2</button>
+            <button class="threebtn" data-number>3</button>
+            <button class="fourbtn" data-number>4</button>
+            <button class="fivebtn" data-number>5</button>
+            <button class="sixbtn" data-number>6</button>
+            <button class="sevenbtn" data-number>7</button>
+            <button class="eightbtn" data-number>8</button>
+            <button class="ninebtn" data-number>9</button>
+            <button class="add-btn" data-operation>+</button>
+            <button class="minus-btn" data-operation>-</button>
+            <button class="multiply-btn" data-operation>*</button>
+            <button class="divide-btn" data-operation>/</button>
+            <button class="zerobtn" data-number>0</button>
+            <button class="pointbtn" data-number>.</button>
+            <button class="equals-btn" data-equals>=</button>
           </div>
         </div>
       </div>
