@@ -50,10 +50,19 @@ allClearButton.addEventListener("click", (event) => {
   clear();
 });
 
+deleteButton.addEventListener("click", (event) => {
+  let newCurrentInput = currentInput.slice(0, currentInput.length - 1);
+  console.log(newCurrentInput);
+  currentInput = newCurrentInput;
+  updateDisplay();
+});
+
 equalsButton.addEventListener("click", (event) => {
   switch (operator) {
     case "+":
-      total = previousInput + currentInput;
+      let toNumberPreviousInput = parseInt(previousInput);
+      let toNumberCurrentInput = parseInt(currentInput);
+      total = toNumberPreviousInput + toNumberCurrentInput;
       currentInput = total;
       currentOperandTextElement.textContent = currentInput;
       break;
